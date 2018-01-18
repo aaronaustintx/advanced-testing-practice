@@ -34,6 +34,8 @@ describe("map", () => {
   });
 });
 
+
+
 describe("sort", () => {
   it("should return an array with numbers in order", () => {
     expect(sort(myNumbers)).toEqual([
@@ -45,7 +47,22 @@ describe("sort", () => {
 //filter should return an array with names of length 3
 //["Jon","Bob","Ted","Axe"]
 
+describe("filter", () => {
+  it("should filter", () => {
+    expect(filter(names,findThree)).toEqual([
+      "Jon","Bob","Ted","Axe"
+    ]);
+  });
+});
+
 //find should find one name of "Barney"
+describe("find", () => {
+  it("should find", () => {
+    expect(filter(names,findBarney)).toEqual([
+      "Barney"
+    ]);
+  });
+});
 
 //findLast should find the last name of "Axe"
 

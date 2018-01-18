@@ -23,7 +23,7 @@ export function filter(theArray, fnc){
   for(var i=0; i<theArray.length; i++){
     let isTrue = new Boolean(fnc(theArray[i]));
     if(isTrue != false){
-    filterArray.push(tmp);
+    filterArray.push(theArray[i]);
   }
   }
 return filterArray;
@@ -53,7 +53,7 @@ export function findLast(theArray){
 
 //return the first element of the array
 export function head(theArray){
-  let firstElement = theArray[0];
+  let firstElement = theArray[0]; 
   return firstElement;
 }
 
