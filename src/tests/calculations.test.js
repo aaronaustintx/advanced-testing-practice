@@ -8,19 +8,19 @@ describe("add", () => {
 });
 
 describe("subtract", () => {
-  it("4 minuses 2 should equal 2", () => {
-    expect(subtract(4, 2)).toBe(2);
+  it("5 minuses 4 should equal 1", () => {
+    expect(subtract(5, 4)).toBe(1);
   });
 });
 
 describe("multiply", () => {
   it("4 multiplied by 2 should equal 8", () => {
-    expect(multiply(4, 2)).toBe(8);
+    expect(multiply(4, 5)).toBe(20);
   });
 });
 
 describe("divide", () => {
-  it("12 divided by 4 should equal 3", () => {
-    expect(divide(12, 4)).toBe(3);
+  it("100 divided by 4 should equal 25", () => {
+    expect(divide(100, 4)).toBe(25);
   });
 });

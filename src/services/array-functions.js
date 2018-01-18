@@ -36,18 +36,25 @@ return filterArray;
 //fnc will return true or false, if true return the item
 //return null
 export function find(theArray, fnc){
-
+  for(var i = 0; i < theArray.length; i++){
+    if (fnc(theArray[i]) !== false){
+      return theArray[i];
+    }
+  }
+  return null;
 }
 
 
 //return the last item in theArray
 export function findLast(theArray){
-
+  let lastItem = theArray[theArray.length - 1];
+  return lastItem;
 }
 
 //return the first element of the array
 export function head(theArray){
-
+  let firstElement = theArray[0];
+  return firstElement;
 }
 
 //create a new array
@@ -55,7 +62,10 @@ export function head(theArray){
 //add the item from each loop to the new array
 //return the new array
 export function reverse(theArray){
-
+  let reverseString = [];
+  for(var i = theArray.length - 1; i>= 0; i--){
+    theArray.push(theArray[i]);
+  }
 }
 
 //create a new array
